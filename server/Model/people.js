@@ -12,12 +12,12 @@ const peopleSchema = mongoose.Schema({
         lowercase : true,
     },
     password: {
-        type: Number,
+        type: String,
         required: true,
 
     },
     confirmpassword: {
-        type: Number,
+        type: String,
         required: true,
         
     },

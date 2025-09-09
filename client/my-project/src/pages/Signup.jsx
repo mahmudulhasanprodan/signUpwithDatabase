@@ -56,13 +56,17 @@ const Signup = () => {
                 className="border-[1px] border-gray-300 w-[300px] py-1 rounded-md pl-3"
                 onChange={handleChange}
               />
-              <input
+             
+               <input
                 type="password"
                 name="confirmpassword"
                 placeholder="Confirm password"
                 className="border-[1px] border-gray-300 w-[300px] py-1 rounded-md pl-3"
                 onChange={handleChange}
               />
+           
+            
+            
               <button
                 type="submit"
                 className="py-2 px-10 bg-green-500 rounded-sm text-white font-bold w-40"

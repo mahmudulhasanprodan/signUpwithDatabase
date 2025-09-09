@@ -4,12 +4,14 @@
   "description": "signup database create",
   "main": "app.js",
   "scripts": {
-    "start" : "nodemon app.js"
+    "start": "nodemon app.js"
   },
   "author": "Mahmudul Hasan",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "cors": "^2.8.5",
+    "crypt": "^0.0.2",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
     "mongoose": "^8.18.0",
