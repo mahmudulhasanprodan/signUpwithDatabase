@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import Signup from './Pages/Signup.jsx'
+import Login from './pages/Login.jsx'
 
 import {
   createBrowserRouter,
@@ -16,6 +17,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
       <Route path="/signup" element={<Signup />} />
+      <Route path="/login" element={<Login />} />
     </Route>
   )
 );
