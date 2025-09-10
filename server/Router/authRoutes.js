@@ -5,8 +5,11 @@ const jwt = require('jsonwebtoken');
 
 const router = express.Router();
 
+
+const {addUserValidators} = require('../Middleware/userValidators')
+
 // Signup route
-router.post("/signup", async (req, res) => {
+router.post("/signup",addUserValidators, async (req, res) => {
 
    try {
      const { username, email, password } = req.body;
