@@ -1,4 +1,4 @@
-const {check} = require('express-validator')
+const {check,validationResult} = require('express-validator')
 const People = require('../Model/people');
 
 
@@ -28,7 +28,12 @@ const addUserValidators = [
 
 ];
 
-
+const addUserValidationHandler = function (req,res,next) {
+     const errors = validationResult(req);
+     const mappedErrors = errors.mapped();
+    
+     
+};
 
 
 // exports
